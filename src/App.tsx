@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { useLenis } from './hooks/useLenis';
 import { Hero } from './sections/Hero';
 import { IntroGrid } from './sections/IntroGrid';
@@ -53,6 +54,9 @@ function App() {
 
       {/* Footer - White Section with Massive Typography */}
       <Footer />
+
+      {/* Vercel Speed Insights */}
+      <SpeedInsights />
     </main>
   );
 }
